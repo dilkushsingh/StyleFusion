@@ -17,7 +17,7 @@ from utils import save_args
 def build_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--config_name", type=str, default=None)
-    parser.add_argument("--data_root_dir", type=str, default="./DATA/zalando-hd-resized")
+    parser.add_argument("--data_root_dir", type=str, default="./VITON_Dataset")
     parser.add_argument("--category", type=str, default=None, choices=["upper", "lower_body", "dresses"])
     parser.add_argument("--vae_load_path", type=str, default="./ckpts/VITONHD_VAE_finetuning.ckpt")
     parser.add_argument("--batch_size", "-bs",  type=int, default=32)
