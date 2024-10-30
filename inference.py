@@ -18,7 +18,7 @@ def build_args():
     parser.add_argument("--config_path", type=str)
     parser.add_argument("--model_load_path", type=str)
     parser.add_argument("--batch_size", type=int, default=16)
-    parser.add_argument("--data_root_dir", type=str, default="./DATA/zalando-hd-resized")
+    parser.add_argument("--data_root_dir", type=str, default="./VITON_Dataset")
     parser.add_argument("--repaint", action="store_true")
     parser.add_argument("--unpair", action="store_true")
     parser.add_argument("--save_dir", type=str, default="./samples")
